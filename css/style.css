@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#inicio, #contacto{
+    background-image: url("../images/fondo-contacto.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#inicio img{
+    height: 400px;
+}
+
+#inicio img:hover{
+    height: 410px;
+}
+
+#inicio p{
+    color: white;
+    border: solid white 1px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#proyectos{
+    background-image: url(../images/fondo-proyectos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#contacto textarea{
+    height: 150px;
+}
+
+footer{
+    color: white;
+    font-weight: 100;
+}
+
+footer a{
+    color: white;
+    font-weight: 100;
+}
+
+footer i{
+    font-size: 35px;
+}
+
+footer .fa-linkedin-in{
+    color: #E20000;
+    font-size: 28px;
+    background-color: white;
+    border-radius: 22px;
+    padding: 8px 8px 4px 8px;
+    margin-left: 10px;
+}
+
+footer .fa-github{
+    font-size: 38px;
+    height: 40px;
+}
+
+h1{
+    color: #E20000;
+    font-size: 36px;
+}
+
+p{
+    color: #6a6a6a;
+}
+
+.proyecto{
+    background-color: white;
+    border: white solid 1px;
+}
+
+.proyecto p{
+    color: #6a6a6a;
+    font-size: 16px;
+    height: 100px;
+}
+
+.proyecto img{
+    height: 217px;
+}
+
+.proyecto h2{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    background: linear-gradient(90deg, rgba(125, 7, 7, 1) 0%, rgba(215, 11, 11, 1) 100%);
+}
+
+.btnrojo{
+    background-color: #E20000 !important;
+    color: white !important;
+    font-weight: 100 !important;
+}
+
+.btn{
+    color: #370a6d;
+    background-color: white;
+    border-radius: 20px;
+    font-weight: 400;
+}
+
+.btn:hover{
+    color: white !important;
+    background-color: #370a6d !important;
+}
+
+.btnwts{
+    position: fixed;
+    right: 50px;
+    bottom: 0px;
+    background-color: #370a6d;
+    border-top: #370a6d solid 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+}
+
+.btn-blanco{
+    color: #370a6d;
+    font-weight: 400;
+}
+
+.linkrojo{
+    color: #E20000;
+}
+
+.active{
+    border: solid 1px #E20000;
+    border-radius: 20px;
+}
+
+.footerojo{
+    color: #E20000;
+}
+
+.footerojo i{
+    color: #E20000;
+}
+
+.footerojo a{
+    color: #E20000;
+}
+
+.div-cohete{
+    height: 410px;
+}
+
+.img-personal{
+    border-radius: 50%;
+    height: 200px;
+}
+
+@media (max-width: 750px){
+    #proyecto{
+        background-image: url(../images/fondo-proyectos.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
