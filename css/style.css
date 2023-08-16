@@ -38,6 +38,20 @@ body{
     height: 150px;
 }
 
+#stack{
+    background: linear-gradient(90deg, rgba(125, 7, 7, 1) 0%, rgba(215, 11, 11, 1) 100%);
+}
+
+#stack h2{
+    color: white;
+}
+
+#stack h3{
+    color: #6a6a6a;
+    font-size: 14px;
+    font-weight: 300;
+}
+
 footer{
     color: white;
     font-weight: 100;
@@ -159,6 +173,17 @@ p{
 .img-personal{
     border-radius: 50%;
     height: 200px;
+}
+
+.tecnologias{
+    background-color: white;
+    border: white solid 1px;
+    border-radius: 5px;
+}
+
+.tecnologias i{
+    font-size: 60px;
+    color: #6A6A6A;
 }
 
 @media (max-width: 750px){
