@@ -62,6 +62,19 @@ body{
     border-radius: 15px;
 }
 
+#experiencia h2, #formacion h2{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#experiencia h2{
+    color: #370a6d;
+}
+
+#formacion h2{
+    color: #E20000;
+}
+
 footer{
     color: white;
     font-weight: 100;
