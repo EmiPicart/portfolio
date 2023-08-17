@@ -53,6 +53,15 @@ body{
     font-weight: 300;
 }
 
+#extra{
+    background-color: #eee;
+}
+
+#extra .card{
+    background-color: #370a6d;
+    border-radius: 15px;
+}
+
 footer{
     color: white;
     font-weight: 100;
@@ -185,6 +194,24 @@ p{
 .tecnologias i{
     font-size: 60px;
     color: #6A6A6A;
+}
+
+.card-extra{
+    background-color: white;
+    border-radius: 15px;
+}
+
+.card-extra h2{
+    font-size: 16px;
+}
+
+.card-extra p{
+    font-size: 14px;
+}
+
+.card-extra i{
+    color: white;
+    font-size: 80px;
 }
 
 @media (max-width: 750px){
