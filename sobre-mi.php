@@ -1,3 +1,9 @@
+<?php 
+
+    $pg = "sobre-mi";
+
+?>
+
 <!DOCTYPE html>
 <html lang="es" class="h-100">
 <head>
@@ -15,32 +21,7 @@
 </head>
 <body id="sobre-mi" class="d-flex flex-column h-100">
     <header class="container">
-        <nav class="navbar navbar-expand-md mb-4">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item px-3">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item px-3">
-                    <a class="nav-link active px-4" href="sobre-mi.html">Sobre mí</a>
-                    </li>
-                    <li class="nav-item px-3">
-                    <a class="nav-link" href="proyectos.html">Proyectos</a>
-                    </li>
-                    <li class="nav-item px-3">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <button class="btn btnrojo" type="submit">Descargar mi CV <i class="fa-solid fa-download"></i></button>
-                </form>
-              </div>
-            </div>
-        </nav>
+        <?php include_once("menu.php") ?>
     </header>
     <main>
         <section id="bio" class="container">
@@ -48,7 +29,7 @@
                 <div class="col-sm-7">
                     <h1 class="col-12 pt-3 pb-5">Sobre mí</h1>
                     <p>Apasionado por la tecnología y gestión de proyectos. Soy docente de cursos de programación Full Stack y de Base de datos.</p>
-                    <a href="contacto.html" class="btn btnrojo my-5 d-none d-sm-block w-25">Enviar mensaje</a> 
+                    <a href="contacto.php" class="btn btnrojo my-5 d-none d-sm-block w-25">Enviar mensaje</a> 
                 </div>
                 <div class="col-sm-3 d-none d-sm-block p-3">
                     <img src="images/EmiPicart1080.png" alt="Emiliano" class="img-fluid img-personal d-none d-sm-block">
@@ -57,7 +38,7 @@
                     <img src="images/EmiPicart1080.png" alt="Emiliano" class="img-fluid img-personal d-block d-sm-none">
                 </div>
                 <div class="col-6 d-block d-sm-none p-3">
-                    <a href="contacto.html" class="btn btnrojo mt-5 d-block d-sm-none">Enviar mensaje</a>
+                    <a href="contacto.php" class="btn btnrojo mt-5 d-block d-sm-none">Enviar mensaje</a>
                 </div>
             </div>
         </section>
