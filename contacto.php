@@ -2,6 +2,35 @@
 
     $pg = "contacto";
 
+    if($_POST){
+        $nombre = $_POST["txtNombre"];
+        $correo = $_POST["txtCorreo"];
+        $telefono = $_POST["txtTelefono"];
+        $mensaje = $_POST["txtMsj"];
+
+        // Varios destinatarios
+        $para  = 'emilianopicart1@hotmail.com' . ', '; // atención a la coma
+        $titulo = 'Recibiste un mensaje desde tu web';
+
+        // mensaje
+        $cuerpo = "
+        Nombre: $nombre <br>
+        Correo: $correo <br>
+        Telefono: $telefono <br>
+        Mensaje: $mensaje";
+
+        // Para enviar un correo HTML, debe establecerse la cabecera Content-type
+        $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+        $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+        // Cabeceras adicionales
+        $cabeceras .= 'To: emilianopicart1@hotmail.com' . "\r\n";
+        $cabeceras .= 'From: contacto@diegoguarino.com.ar' . "\r\n";
+
+        // Enviarlo
+        //mail($para, $título, $mensaje, $cabeceras);
+        header("Location: confirmacion.php");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +63,7 @@
                 <p>Te invito a que te contactes enviándome un mensaje o bien por whatsapp.</p>
             </div>
             <div class="col-12 col-sm-6">
-                <form action="" method="post">
+                <form action="" method="POST">
                     <div class="pb-3">
                         <input type="text" name="textNombre" id="txtNombre" required placeholder="Nombre" class="form-control shadow">
                     </div>
