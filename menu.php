@@ -19,7 +19,7 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                  <button class="btn btnrojo" type="submit">Descargar mi CV <i class="fa-solid fa-download"></i></button>
+                  <button class="<?php echo ($pg == "proyectos") ? "btn btn-blanco" : "btn btnrojo"; ?>" type="submit">Descargar mi CV <i class="fa-solid fa-download"></i></button>
                 </form>
               </div>
             </div>
