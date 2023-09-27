@@ -111,7 +111,7 @@ footer i{
 }
 
 footer .fa-linkedin-in{
-    color: #E20000;
+    color: #458191;
     font-size: 28px;
     background-color: white;
     border-radius: 22px;
@@ -152,7 +152,7 @@ p{
     color: white;
     font-size: 16px;
     font-weight: 400;
-    background: linear-gradient(90deg, rgba(81,97,130,1) 0%, rgba(69,129,145,1) 50%, rgba(8,70,195,1) 100%);
+    background: linear-gradient(90deg, rgba(69,129,145,1) 0%, rgba(76,110,136,1) 25%, rgba(81,97,130,1) 50%, rgba(96,127,163,1) 75%, rgba(8,70,195,1) 100%);/*linear-gradient(90deg, rgba(69,129,145,1) 0%, rgba(76,110,136,1) 25%, rgba(81,97,130,1) 50%, rgba(96,127,163,1) 75%, rgba(8,70,195,1) 100%);*//*linear-gradient(90deg, rgba(81,97,130,1) 0%, rgba(69,129,145,1) 50%, rgba(8,70,195,1) 100%);*/
 }
 
 .btnrojo{
@@ -190,7 +190,7 @@ p{
 }
 
 .linkrojo{
-    color: #E20000;
+    color: #458191;
 }
 
 .active{
