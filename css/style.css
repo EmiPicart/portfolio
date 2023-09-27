@@ -39,7 +39,7 @@ body{
 }
 
 #stack{
-    background: linear-gradient(90deg, rgba(125, 7, 7, 1) 0%, rgba(215, 11, 11, 1) 100%);
+    background: linear-gradient(90deg, rgba(81,97,130,1) 0%, rgba(69,129,145,1) 50%, rgba(8,70,195,1) 100%); /*linear-gradient(90deg, rgba(102,102,102,1) 0%, rgba(69,129,145,1) 40%, rgba(8,70,195,1) 100%);*/
 }
 
 #stack h2{
@@ -58,7 +58,7 @@ body{
 }
 
 #extra .card{
-    background-color: #370a6d;
+    background-color: #0846c3;
     border-radius: 15px;
 }
 
@@ -75,11 +75,11 @@ body{
 
 #experiencia h4{
     font-size: 17px;
-    color: #370a6d;
+    color: #0846c3;
 }
 
 #formacion h4{
-    color: #E20000;
+    color: #0846c3;
     font-size: 17px;
 }
 
@@ -89,11 +89,11 @@ body{
 }
 
 #experiencia h2{
-    color: #370a6d;
+    color: #458191;
 }
 
 #formacion h2{
-    color: #E20000;
+    color: #458191;
 }
 
 footer{
@@ -125,7 +125,7 @@ footer .fa-github{
 }
 
 h1{
-    color: #E20000;
+    color: #458191;
     font-size: 36px;
 }
 
@@ -156,7 +156,7 @@ p{
 }
 
 .btnrojo{
-    background-color: #E20000 !important;
+    background-color: #458191 !important;
     color: white !important;
     font-weight: 100 !important;
 }
@@ -194,20 +194,20 @@ p{
 }
 
 .active{
-    border: solid 1px #E20000;
+    border: solid 1px #458191;
     border-radius: 20px;
 }
 
 .footerojo{
-    color: #E20000;
+    color: #458191;
 }
 
 .footerojo i{
-    color: #E20000;
+    color: #458191;
 }
 
 .footerojo a{
-    color: #E20000;
+    color: #458191;
 }
 
 .div-cohete{
