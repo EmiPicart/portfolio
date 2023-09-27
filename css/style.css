@@ -152,7 +152,7 @@ p{
     color: white;
     font-size: 16px;
     font-weight: 400;
-    background: linear-gradient(90deg, rgba(125, 7, 7, 1) 0%, rgba(215, 11, 11, 1) 100%);
+    background: linear-gradient(90deg, rgba(81,97,130,1) 0%, rgba(69,129,145,1) 50%, rgba(8,70,195,1) 100%);
 }
 
 .btnrojo{
