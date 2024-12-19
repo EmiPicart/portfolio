@@ -1,3 +1,38 @@
+<?php 
+
+    $pg = "contacto";
+
+    if($_POST){
+        $nombre = $_POST["txtNombre"];
+        $correo = $_POST["txtCorreo"];
+        $telefono = $_POST["txtTelefono"];
+        $mensaje = $_POST["txtMsj"];
+
+        // Varios destinatarios
+        $para  = 'emilianopicart1@hotmail.com' . ', '; // atención a la coma
+        $titulo = 'Recibiste un mensaje desde tu web';
+
+        // mensaje
+        $cuerpo = "
+        Nombre: $nombre <br>
+        Correo: $correo <br>
+        Telefono: $telefono <br>
+        Mensaje: $mensaje";
+
+        // Para enviar un correo HTML, debe establecerse la cabecera Content-type
+        $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+        $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+        // Cabeceras adicionales
+        $cabeceras .= 'To: emilianopicart1@hotmail.com' . "\r\n";
+        $cabeceras .= 'From: contacto@diegoguarino.com.ar' . "\r\n";
+
+        // Enviarlo
+        //mail($para, $título, $mensaje, $cabeceras);
+        header("Location: confirmacion.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="es" class="h-100">
 <head>
@@ -15,32 +50,7 @@
 </head>
 <body id="contacto" class="d-flex flex-column h-100">
     <header class="container">
-        <nav class="navbar navbar-expand-md mb-4">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item px-3">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item px-3">
-                    <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
-                    </li>
-                    <li class="nav-item px-3">
-                    <a class="nav-link" href="proyectos.html">Proyectos</a>
-                    </li>
-                    <li class="nav-item px-3">
-                    <a class="nav-link active px-4" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <button class="btn btnrojo" type="submit">Descargar mi CV <i class="fa-solid fa-download"></i></button>
-                </form>
-              </div>
-            </div>
-        </nav>
+        <?php include_once("menu.php") ?>
     </header>
     <main class="container">
         <div class="row">
@@ -53,7 +63,7 @@
                 <p>Te invito a que te contactes enviándome un mensaje o bien por whatsapp.</p>
             </div>
             <div class="col-12 col-sm-6">
-                <form action="" method="post">
+                <form action="" method="POST">
                     <div class="pb-3">
                         <input type="text" name="textNombre" id="txtNombre" required placeholder="Nombre" class="form-control shadow">
                     </div>
