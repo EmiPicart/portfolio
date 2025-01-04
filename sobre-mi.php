@@ -32,10 +32,10 @@
                     <a href="contacto.php" class="btn btnrojo my-5 d-none d-sm-block w-25">Enviar mensaje</a> 
                 </div>
                 <div class="col-sm-3 d-none d-sm-block p-3">
-                    <img src="images/EmiPicart1080.png" alt="Emiliano" class="img-fluid img-personal d-none d-sm-block">
+                    <img src="images/1080EP.jpg" alt="Emiliano" class="img-fluid img-personal d-none d-sm-block">
                 </div>
                 <div class="col-6 d-block d-sm-none p-3">
-                    <img src="images/EmiPicart1080.png" alt="Emiliano" class="img-fluid img-personal d-block d-sm-none">
+                    <img src="images/1080EP.jpg" alt="Emiliano" class="img-fluid img-personal d-block d-sm-none">
                 </div>
                 <div class="col-6 d-block d-sm-none p-3">
                     <a href="contacto.php" class="btn btnrojo mt-5 d-block d-sm-none">Enviar mensaje</a>
